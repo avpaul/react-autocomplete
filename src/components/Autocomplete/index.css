@@ -1,0 +1,90 @@
+.select-wrapper {
+  color: #242423;
+  position: relative;
+}
+
+.select-wrapper > input[type="text"] {
+  padding: 8px 12px;
+  border-radius: 6px;
+  min-height: 36px;
+  font-size: 14px;
+  border: #e5e5e5 1px solid;
+  box-sizing: border-box;
+}
+
+.select-wrapper > input[type="text"].has-value {
+  padding-right: 20px;
+}
+
+.select-wrapper > input[type="text"]:active,
+.select-wrapper > input[type="text"]:focus,
+.select-wrapper > input[type="text"]:focus-visible {
+  outline: #b3e5f8 2px solid;
+  border-color: #00a8e8;
+}
+
+.select-wrapper > input[type="text"]::placeholder {
+  color: #929291;
+}
+
+.select-wrapper > button.clear-btn {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  right: 8px;
+  height: 14px;
+  width: 14px;
+  font-size: 8px;
+  color: #adb5bd;
+  border-radius: 50%;
+  border: #e5e5e5 solid 1px;
+  background-color: #fff;
+  text-align: center;
+  pointer-events: visible;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+.select-wrapper > button.clear-btn:hover {
+  cursor: pointer;
+}
+
+.select-options {
+  box-sizing: border-box;
+  padding: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  text-align: left;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 2px 2px 16px 1px #00000018;
+  max-height: 328px;
+  overflow-y: auto;
+}
+
+.select-options .select-option {
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 4px;
+  color: #242423;
+  min-height: 36px;
+}
+
+.select-options .select-option:not(:first-child) {
+  margin-top: 4px;
+}
+.select-options .select-option:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.select-options .select-option:hover {
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.select-option.select-option-selected {
+  background-color: #f2f2f2;
+}

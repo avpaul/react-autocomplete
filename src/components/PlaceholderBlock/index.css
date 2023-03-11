@@ -1,0 +1,10 @@
+.placeholder-block {
+  background-color: #ced4da;
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+}
+
+.placeholder-block.circle {
+  border-radius: 50%;
+}
