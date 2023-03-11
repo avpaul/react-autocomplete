@@ -11,7 +11,6 @@ function App() {
   );
 
   const autocompleteHandler = async (keyWord: string) => {
-    console.log("@search", keyWord);
     const options = {
       method: "GET",
     };
